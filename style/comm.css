@@ -1,0 +1,167 @@
+body { font-family: Tahoma, Arial, Helvetica, sans-serif; margin-top:0; padding-top:0;}
+
+img {border:0px;}
+
+h3{
+	padding:0px;
+	margin:0px;
+}
+/* Drop Down Menu Styles */
+#nav, #nav ul { /* all lists */
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+/*	line-height: normal;*/
+	width: 981px;
+	text-align: left;
+}
+
+#nav a {
+	display: block;
+/*	width: 121px;*/
+	text-decoration: none;
+	color:#6E8784;
+}
+
+#nav a:hover {
+	color: #E4E4E4;
+	text-decoration: none;
+	background:#6E8784;
+}
+
+#nav li { /* all list items */
+	float: left;
+/*	width: 129px;*/ /* width needed or else Opera goes nuts */
+/*	background-color: #E4E4E4;*/
+}
+
+#nav li a { /* horizontal menu */
+	display: block;
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 12px;	
+	color: #FFFFFF;
+	line-height:46px;
+	text-align: center;
+}
+
+#nav li a:hover { /* horizontal menu */
+	display: block;
+	color:#6E8784;
+	font-weight: bold;
+}
+
+#nav li ul { /* 1st tier drop downs */
+	position: absolute;
+	width: 192px;
+	background-image:url(../images/dd_bg.gif);
+	background-position:bottom;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+}
+
+#nav li ul li{
+	width: 190px;
+	padding-left:1px;
+	padding-bottom:1px;
+	line-height:18px;
+}
+
+#nav li ul li a{
+	display: block;
+	background: #FFFFFF;
+	padding: 0px 10px 0px 10px;
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 11px;
+	line-height: 24px;
+	text-align: left;
+	font-weight: normal;
+	text-decoration: none;
+	color: #6E8784;
+}
+
+#nav li ul li a:hover {
+	display: block;
+	padding: 0px 10px 0px 10px;
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: left;
+	font-weight: normal;	
+	color: #6E8784;
+	text-decoration: none;
+	background:#E4E4E4;	
+}
+
+#nav li ul li ul li { /* sub-submenu */
+	background-color: #E4E4E4;
+	width: 250px;
+/*	background-image:url(../images/shadow.gif);*/
+}
+
+#nav li ul li ul li a:hover { /* sub-submenu links */
+	color: #6E8784;
+}
+#nav li ul ul { /* 2nd tier & above menus */
+	margin: -19px 0px 0px 190px; /* positions 2nd tier menu to right of dropdown */
+}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+/* 3rd level */
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul { 
+	left: -999em;
+}
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul { 
+	left: auto;
+}
+/* 4th level */
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul, #nav li.sfhover ul ul ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul, #nav li li li li.sfhover ul {
+	left: auto;
+}
+#nav li:hover, #nav li.hover {
+    position: static;
+}
+
+/* End Drop Down Menu Styles */
+
+.alert {
+    padding: 20px;
+    background-color: #FFDB75;
+    color: white;
+}
+
+td { font-family: Tahoma, Arial, Helvetica, sans-serif; text-align:left;}
+
+th { font-family: Tahoma, Arial, Helvetica, sans-serif;}
+
+td.footer { color:#636363; font-size:11px; background-image:url(../images/footer2.jpg);}
+td.footer a { color:#636363; font-size:11px; text-decoration:underline;}
+td.footer a:hover { color:#636363; font-size:11px; text-decoration:underline; }
+td.footer a:visited{ color:#636363; font-size:11px; text-decoration:underline;}
+
+td.content { background-image:url(../images/row5.jpg); background-repeat:no-repeat; background-color:#e5e5e5;}
+
+td.main_copy { color:#3d5d59; font-size:12px; padding-top:28px;}
+td.main_copy h3 { color:#FFFFFF; font-size:16px;}
+td.main_copy a { color:#3d5d59; font-size:11px; text-decoration:underline;}
+td.main_copy a:hover { color:#3d5d59; font-size:11px; text-decoration:underline;}
+td.main_copy a:visited { color:#3d5d59; font-size:11px; text-decoration:underline;}
+td.main_copy td{ color:#3d5d59; font-size:11px; padding-top:10px;}
+
+td.side_copy { color:#3d5d59; font-size:11px; padding-top:28px;}
+td.side_copy h3 { color:#FFFFFF; font-size:16px;}
+td.side_copy a { color:#3d5d59; font-size:11px; text-decoration:underline;}
+td.side_copy a:hover { color:#3d5d59; font-size:11px; text-decoration:underline;}
+td.side_copy a:visited { color:#3d5d59; font-size:11px; text-decoration:underline;}
+
+td.head_bucket b { font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:13px; color:#FFFFFF; padding:0;}
+td.head_bucket { font-family:Tahoma, Arial, Helvetica, sans-serif; font-size:12px; color:#FFFFFF; padding:0;}

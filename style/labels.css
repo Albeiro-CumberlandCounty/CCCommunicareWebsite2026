@@ -1,0 +1,13 @@
+﻿
+.announcement, .maintenance, .notice { background-color:#FFFFCC; padding: 3px 5px 8px 5px; border: 1px solid #ccc; margin: 0px 0px 10px 0px; }
+.announcement h1, .announcement h2, .announcement h3, .announcement h4, .announcement h5, .announcement h6 
+, .maintenance h1, .maintenance h2, .maintenance h3, .maintenance h4, .maintenance h5, .maintenance h6 
+, .notice h1, .notice h2, .notice h3, .notice h4, .notice h5, .notice h6 
+, .announcement a:hover, .maintenance a:hover, .notice a:hover
+{ background: none !important; }
+.announcement .item 
+{ border-bottom: 1px dashed #ccc; padding: 3px 0px 5px 0px !important; }
+.announcement .item:last-child, .announcement .item.last 
+{ border-bottom: 0px; padding-bottom: 0px !important; }
+
+.error { font-weight: bold; color: #CC0000; background-color: inherit; }
